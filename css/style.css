@@ -6,14 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
 
 :root {
-    /* Mil Folhas Brand Colors */
     --bg-color: #F4F1EA;       
     --text-color: #2C2520;       
     --brand-color: #39B54A;       
     --support-color: #1E3525;       
     --accent-color: #D4A373;    
 
-    /* Typography */
     --font-heading: 'Rubik', sans-serif;
     --font-body: 'Lora', serif;
 }
