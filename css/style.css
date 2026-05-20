@@ -1,1 +1,58 @@
 
+/* ==========================================================================
+   FICHEIRO: css/style.css
+   Objetivo: Cores, Tipografia e Estética Visual
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    /* Cores da Marca Mil Folhas */
+    --cor-fundo: #F4F1EA;       
+    --cor-texto: #2C2520;       
+    --cor-marca: #39B54A;       
+    --cor-apoio: #1E3525;       
+    --cor-destaque: #D4A373;    
+
+    /* Tipografia */
+    --fonte-titulos: 'Rubik', sans-serif;
+    --fonte-texto: 'Lora', serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-titulos);
+    font-weight: 700;
+    color: var(--cor-apoio);
+}
+
+a {
+    color: var(--cor-apoio);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-marca);
+}
+
+.botao-principal {
+    background-color: var(--cor-marca);
+    color: #ffffff;
+    font-family: var(--fonte-titulos);
+    font-weight: 500;
+    border: none;
+    border-radius: 4px; /* Apenas o arredondamento visual */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-principal:hover {
+    background-color: var(--cor-apoio);
+}
