@@ -1,10 +1,9 @@
-
 /* ==========================================================================
-   FICHEIRO: css/layout.css
-   Objetivo: Estrutura, Grelhas, Margens e Posicionamento
+   FILE: css/layout.css
+   Purpose: Structure, Grids, Margins, and Positioning
    ========================================================================== */
 
-/* Reset Básico de Estrutura */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,37 +14,37 @@ body {
     line-height: 1.6;
 }
 
-/* Contentor principal para manter o site centrado e não colar aos cantos */
+/* Main wrapper to keep content centered */
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* Centra o contentor no ecrã */
-    padding: 0 20px; /* Dá uma folga nas laterais para telemóveis */
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
-/* Estrutura do Cabeçalho (Header) */
-.cabecalho-principal {
-    display: flex; /* Coloca o logo e o menu lado a lado */
-    justify-content: space-between; /* Empurra um para cada ponta */
-    align-items: center; /* Centra verticalmente */
+/* Header Structure */
+.main-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px 0;
 }
 
-/* Estrutura para os Botões (Tamanhos e Espaçamentos) */
-.botao-principal {
+/* Button Structure (Sizes and Spacing) */
+.btn-primary {
     display: inline-block;
     padding: 12px 24px;
 }
 
-/* Grelha para dividir o ecrã a meio (ex: Texto de um lado, Imagem do outro) */
-.grelha-2-colunas {
+/* 2-Column Grid (e.g., Text on one side, Image on the other) */
+.grid-2-cols {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas com a mesma largura */
-    gap: 40px; /* Espaço entre as colunas */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
     margin-top: 50px;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove o pequeno espaço fantasma por baixo das imagens */
+    display: block; 
 }
