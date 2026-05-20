@@ -1,58 +1,57 @@
-
 /* ==========================================================================
-   FICHEIRO: css/style.css
-   Objetivo: Cores, Tipografia e Estética Visual
+   FILE: css/style.css
+   Purpose: Colors, Typography, and Visual Aesthetics
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
 
 :root {
-    /* Cores da Marca Mil Folhas */
-    --cor-fundo: #F4F1EA;       
-    --cor-texto: #2C2520;       
-    --cor-marca: #39B54A;       
-    --cor-apoio: #1E3525;       
-    --cor-destaque: #D4A373;    
+    /* Mil Folhas Brand Colors */
+    --bg-color: #F4F1EA;       
+    --text-color: #2C2520;       
+    --brand-color: #39B54A;       
+    --support-color: #1E3525;       
+    --accent-color: #D4A373;    
 
-    /* Tipografia */
-    --fonte-titulos: 'Rubik', sans-serif;
-    --fonte-texto: 'Lora', serif;
+    /* Typography */
+    --font-heading: 'Rubik', sans-serif;
+    --font-body: 'Lora', serif;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    font-family: var(--fonte-texto);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--fonte-titulos);
+    font-family: var(--font-heading);
     font-weight: 700;
-    color: var(--cor-apoio);
+    color: var(--support-color);
 }
 
 a {
-    color: var(--cor-apoio);
+    color: var(--support-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--cor-marca);
+    color: var(--brand-color);
 }
 
-.botao-principal {
-    background-color: var(--cor-marca);
+.btn-primary {
+    background-color: var(--brand-color);
     color: #ffffff;
-    font-family: var(--fonte-titulos);
+    font-family: var(--font-heading);
     font-weight: 500;
     border: none;
-    border-radius: 4px; /* Apenas o arredondamento visual */
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.botao-principal:hover {
-    background-color: var(--cor-apoio);
+.btn-primary:hover {
+    background-color: var(--support-color);
 }
