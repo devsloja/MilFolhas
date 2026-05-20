@@ -1,1 +1,51 @@
 
+/* ==========================================================================
+   FICHEIRO: css/layout.css
+   Objetivo: Estrutura, Grelhas, Margens e Posicionamento
+   ========================================================================== */
+
+/* Reset Básico de Estrutura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Contentor principal para manter o site centrado e não colar aos cantos */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra o contentor no ecrã */
+    padding: 0 20px; /* Dá uma folga nas laterais para telemóveis */
+}
+
+/* Estrutura do Cabeçalho (Header) */
+.cabecalho-principal {
+    display: flex; /* Coloca o logo e o menu lado a lado */
+    justify-content: space-between; /* Empurra um para cada ponta */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px 0;
+}
+
+/* Estrutura para os Botões (Tamanhos e Espaçamentos) */
+.botao-principal {
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+/* Grelha para dividir o ecrã a meio (ex: Texto de um lado, Imagem do outro) */
+.grelha-2-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com a mesma largura */
+    gap: 40px; /* Espaço entre as colunas */
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove o pequeno espaço fantasma por baixo das imagens */
+}
