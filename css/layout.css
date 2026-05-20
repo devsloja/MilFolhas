@@ -3,7 +3,6 @@
    Purpose: Structure, Grids, Margins, and Positioning
    ========================================================================== */
 
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +13,12 @@ body {
     line-height: 1.6;
 }
 
-/* Main wrapper to keep content centered */
 .container {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 0 20px; 
 }
 
-/* Header Structure */
 .main-header {
     display: flex; 
     justify-content: space-between; 
@@ -29,18 +26,17 @@ body {
     padding: 20px 0;
 }
 
-/* Button Structure (Sizes and Spacing) */
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
 }
 
-/* 2-Column Grid (e.g., Text on one side, Image on the other) */
 .grid-2-cols {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 40px; 
     margin-top: 50px;
+    align-items: center; /* Adicionado para centrar verticalmente o texto com a imagem */
 }
 
 img {
