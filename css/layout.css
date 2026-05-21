@@ -44,3 +44,18 @@ img {
     height: auto;
     display: block; 
 }
+/* ==========================================================================
+   Ajustes de Imagem e Novas Secções
+   ========================================================================== */
+
+/* Controla o tamanho do logótipo para não desfigurar o cabeçalho */
+.logo-img {
+    max-height: 85px; 
+    width: auto;
+}
+
+/* Espaçamento extra para a nova secção da florista não ficar colada à secção de cima */
+.florist-section {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
