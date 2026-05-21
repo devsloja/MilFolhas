@@ -54,3 +54,26 @@ a:hover {
 .btn-primary:hover {
     background-color: var(--support-color);
 }
+/* ==========================================================================
+   Estética dos Cartões de Produto
+   ========================================================================== */
+.product-card {
+    border: 1px solid #E0DCD3; /* Borda subtil a combinar com o fundo creme */
+    border-radius: 8px;
+    background-color: #ffffff; /* Fundo branco para destacar o produto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pequena animação ao passar o rato (hover) para dar interatividade */
+.product-card:hover {
+    transform: translateY(-5px); /* Levanta o cartão ligeiramente */
+    box-shadow: 0 10px 20px rgba(44, 37, 32, 0.1); /* Cria uma sombra suave */
+}
+
+.product-price {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--brand-color); /* Preço no verde da marca */
+}
