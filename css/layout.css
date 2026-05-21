@@ -79,3 +79,32 @@ img {
     height: auto;
     display: block; 
 }
+/* ==========================================================================
+   Design Responsivo (Adaptação para Telemóveis e Tablets)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* O cabeçalho passa a empilhar o logótipo e o menu */
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* O menu permite quebra de linha se os links não couberem */
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* As grelhas passam a ter apenas 1 coluna de largura total */
+    .grid-2-cols, 
+    .grid-3-cols {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Reduz o espaço em branco exagerado nos telemóveis */
+    .florist-section {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+}
