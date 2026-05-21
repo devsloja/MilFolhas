@@ -6,9 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
 
 :root {
-    /* O fundo passa a branco puro para fundir com a imagem do logótipo */
-    --bg-color: #FFFFFF;       
-    
+    --bg-color: #FFFFFF; /* Fundo branco atualizado */      
     --text-color: #2C2520;       
     --brand-color: #39B54A;       
     --support-color: #1E3525;       
@@ -17,6 +15,7 @@
     --font-heading: 'Rubik', sans-serif;
     --font-body: 'Lora', serif;
 }
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -54,20 +53,17 @@ a:hover {
 .btn-primary:hover {
     background-color: var(--support-color);
 }
-/* ==========================================================================
-   Estética dos Cartões de Produto
-   ========================================================================== */
+
 .product-card {
-    border: 1px solid #E0DCD3; /* Borda subtil a combinar com o fundo creme */
+    border: 1px solid #E0DCD3; 
     border-radius: 8px;
-    background-color: #ffffff; /* Fundo branco para destacar o produto */
+    background-color: #ffffff; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Pequena animação ao passar o rato (hover) para dar interatividade */
 .product-card:hover {
-    transform: translateY(-5px); /* Levanta o cartão ligeiramente */
-    box-shadow: 0 10px 20px rgba(44, 37, 32, 0.1); /* Cria uma sombra suave */
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(44, 37, 32, 0.1); 
 }
 
 .product-price {
@@ -75,5 +71,5 @@ a:hover {
     margin-top: 10px;
     font-weight: 700;
     font-size: 1.2rem;
-    color: var(--brand-color); /* Preço no verde da marca */
+    color: var(--brand-color); 
 }
