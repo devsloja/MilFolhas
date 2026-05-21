@@ -59,3 +59,29 @@ img {
     margin-top: 100px;
     margin-bottom: 80px;
 }
+/* Grelha para 3 colunas (Ideal para montras de produtos) */
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    gap: 30px; 
+    margin-bottom: 80px;
+}
+
+/* Estrutura do Cartão de Produto */
+.product-card {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o botão para o fundo */
+}
+
+.product-card img {
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.product-card .btn-primary {
+    margin-top: 15px;
+    width: 100%; /* Faz o botão ocupar toda a largura do cartão */
+}
