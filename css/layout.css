@@ -3,6 +3,7 @@
    Purpose: Structure, Grids, Margins, and Positioning
    ========================================================================== */
 
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +14,14 @@ body {
     line-height: 1.6;
 }
 
+/* Contentor Geral */
 .container {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 0 20px; 
 }
 
+/* Cabeçalho */
 .main-header {
     display: flex; 
     justify-content: space-between; 
@@ -31,11 +34,24 @@ body {
     width: auto;
 }
 
+.main-nav ul {
+    display: flex; 
+    gap: 20px; 
+    list-style: none;
+}
+
+/* Estrutura de Componentes */
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
 }
 
+.section-header {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* Grelhas (Layouts) */
 .grid-2-cols {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -51,9 +67,34 @@ body {
     margin-bottom: 80px;
 }
 
+/* Secções Específicas */
+.florist-section,
+.porto-section {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.porto-section .grid-2-cols img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.livraria-gallery {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    align-items: stretch;
+}
+
+.livraria-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cartões de Produto */
 .product-card {
     padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -61,7 +102,6 @@ body {
 
 .product-card img {
     margin-bottom: 15px;
-    border-radius: 4px;
 }
 
 .product-card .btn-primary {
@@ -69,42 +109,77 @@ body {
     width: 100%; 
 }
 
-.florist-section {
-    margin-top: 100px;
+/* Formulário e Contactos */
+.contact-section {
+    margin-bottom: 80px;
+    align-items: start;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.map-section {
     margin-bottom: 80px;
 }
 
+.map-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Elementos Globais de Imagem */
 img {
     max-width: 100%;
     height: auto;
     display: block; 
 }
+
 /* ==========================================================================
-   Design Responsivo (Adaptação para Telemóveis e Tablets)
+   Design Responsivo (Telemóveis e Tablets)
    ========================================================================== */
 @media (max-width: 768px) {
-    /* O cabeçalho passa a empilhar o logótipo e o menu */
     .main-header {
         flex-direction: column;
         gap: 15px;
     }
 
-    /* O menu permite quebra de linha se os links não couberem */
     .main-nav ul {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    /* As grelhas passam a ter apenas 1 coluna de largura total */
     .grid-2-cols, 
     .grid-3-cols {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    /* Reduz o espaço em branco exagerado nos telemóveis */
-    .florist-section {
+    .florist-section,
+    .porto-section {
         margin-top: 60px;
         margin-bottom: 40px;
+    }
+
+    .porto-section .grid-2-cols img {
+        height: 250px;
     }
 }
