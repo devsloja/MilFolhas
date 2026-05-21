@@ -1,1 +1,69 @@
 
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria | Mil Folhas</title>
+    
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header container">
+        <div class="brand-logo">
+            <a href="../index.html">
+                <img src="../logo-mil-folhas.png" alt="Logótipo Mil Folhas" class="logo-img">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul style="display: flex; gap: 20px; list-style: none;">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="livraria.html">Livraria</a></li>
+                <li><a href="florista.html">Florista</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 40px;">
+            <h2>Catálogo Literário</h2>
+            <p>Descubra a nossa seleção rigorosa de obras e lançamentos.</p>
+        </div>
+
+        <section class="grid-3-cols" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 80px;">
+            
+            <div class="card-produto" style="text-align: center; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                <img src="../assets/img/detalhe-livros.jpeg" alt="Livro em destaque" style="margin-bottom: 15px;">
+                <h3>Título do Livro</h3>
+                <p>Autor Reconhecido</p>
+                <span style="display: block; margin-top: 10px; font-weight: bold; color: var(--brand-color);">16,50 €</span>
+                <button class="btn-primary" style="margin-top: 15px; width: 100%;">Adicionar</button>
+            </div>
+
+            <div class="card-produto" style="text-align: center; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                <img src="../assets/img/detalhe-livros.jpeg" alt="Livro em destaque" style="margin-bottom: 15px;">
+                <h3>A Arte da Botânica</h3>
+                <p>Especialista em Plantas</p>
+                <span style="display: block; margin-top: 10px; font-weight: bold; color: var(--brand-color);">22,00 €</span>
+                <button class="btn-primary" style="margin-top: 15px; width: 100%;">Adicionar</button>
+            </div>
+
+            <div class="card-produto" style="text-align: center; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                <img src="../assets/img/detalhe-livros.jpeg" alt="Livro em destaque" style="margin-bottom: 15px;">
+                <h3>Romance Clássico</h3>
+                <p>Autor Intemporal</p>
+                <span style="display: block; margin-top: 10px; font-weight: bold; color: var(--brand-color);">14,90 €</span>
+                <button class="btn-primary" style="margin-top: 15px; width: 100%;">Adicionar</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
