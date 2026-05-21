@@ -1,1 +1,78 @@
 
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Mil Folhas</title>
+    
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header container">
+        <div class="brand-logo">
+            <a href="../index.html">
+                <img src="../logo-mil-folhas.png" alt="Logótipo Mil Folhas" class="logo-img">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul style="display: flex; gap: 20px; list-style: none;">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="livraria.html">Livraria</a></li>
+                <li><a href="florista.html">Florista</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 40px;">
+            <h2>Fale Connosco</h2>
+            <p>Estamos aqui para ajudar com encomendas, reservas de livros ou arranjos personalizados.</p>
+        </div>
+
+        <section class="grid-2-cols" style="margin-bottom: 80px; align-items: start;">
+            
+            <div class="contact-info">
+                <h3>Visite-nos</h3>
+                <p style="margin-top: 10px;">
+                    <strong>Morada:</strong><br>
+                    Rua de Cedofeita, 123<br>
+                    4050-173 Porto
+                </p>
+                <p style="margin-top: 15px;">
+                    <strong>Horário:</strong><br>
+                    Segunda a Sábado: 09h00 - 19h00<br>
+                    Domingo: Encerrado
+                </p>
+                <p style="margin-top: 15px;">
+                    <strong>Telefone:</strong><br>
+                    +351 220 000 000
+                </p>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <label for="nome" style="display: block; margin-bottom: 5px;">Nome</label>
+                    <input type="text" id="nome" name="nome" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-body);">
+                    
+                    <label for="email" style="display: block; margin-bottom: 5px;">E-mail</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-body);">
+                    
+                    <label for="mensagem" style="display: block; margin-bottom: 5px;">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-body);"></textarea>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%;">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+</html>
