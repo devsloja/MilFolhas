@@ -3,7 +3,6 @@
    Purpose: Structure, Grids, Margins, and Positioning
    ========================================================================== */
 
-/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +13,12 @@ body {
     line-height: 1.6;
 }
 
-/* Contentor Geral */
 .container {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 0 20px; 
 }
 
-/* Cabeçalho */
 .main-header {
     display: flex; 
     justify-content: space-between; 
@@ -40,7 +37,6 @@ body {
     list-style: none;
 }
 
-/* Estrutura de Componentes */
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
@@ -51,7 +47,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* Grelhas (Layouts) */
+/* Grelhas */
 .grid-2-cols {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -67,7 +63,7 @@ body {
     margin-bottom: 80px;
 }
 
-/* Secções Específicas */
+/* Secções */
 .florist-section,
 .porto-section {
     margin-top: 100px;
@@ -92,24 +88,21 @@ body {
     object-fit: cover;
 }
 
-/* Cartões de Produto */
-.product-card {
+/* Cartões de Exposição (Showcase) */
+.showcase-card {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    align-items: center;
 }
 
-.product-card img {
+.showcase-card img {
     margin-bottom: 15px;
+    width: 100%;
+    height: auto;
 }
 
-.product-card .btn-primary {
-    margin-top: 15px;
-    width: 100%; 
-}
-
-/* Formulário e Contactos */
+/* Contactos */
 .contact-section {
     margin-bottom: 80px;
     align-items: start;
@@ -146,16 +139,13 @@ body {
     border: 0;
 }
 
-/* Elementos Globais de Imagem */
 img {
     max-width: 100%;
     height: auto;
     display: block; 
 }
 
-/* ==========================================================================
-   Design Responsivo (Telemóveis e Tablets)
-   ========================================================================== */
+/* Responsividade */
 @media (max-width: 768px) {
     .main-header {
         flex-direction: column;
