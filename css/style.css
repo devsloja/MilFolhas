@@ -6,14 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
 
 :root {
-    /* Cores */
     --bg-color: #FFFFFF;       
     --text-color: #2C2520;       
     --brand-color: #39B54A;       
     --support-color: #1E3525;       
     --accent-color: #D4A373;    
 
-    /* Tipografia */
     --font-heading: 'Rubik', sans-serif;
     --font-body: 'Lora', serif;
 }
@@ -25,7 +23,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Tipografia Base */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -47,7 +44,6 @@ h2 {
     margin-right: auto;
 }
 
-/* Links e Interações */
 a {
     color: var(--support-color);
     text-decoration: none;
@@ -58,7 +54,6 @@ a:hover {
     color: var(--brand-color);
 }
 
-/* Botões */
 .btn-primary {
     background-color: var(--brand-color);
     color: #ffffff;
@@ -74,20 +69,32 @@ a:hover {
     background-color: var(--support-color);
 }
 
-/* Estética dos Cartões de Produto */
-.product-card {
+/* Estética da Galeria de Exposição */
+.showcase-card {
     border: 1px solid #E0DCD3; 
     border-radius: 8px;
     background-color: #ffffff; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-card:hover {
+.showcase-card:hover {
     transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(44, 37, 32, 0.1); 
+    box-shadow: 0 10px 20px rgba(44, 37, 32, 0.05); 
 }
 
-.product-card img,
+.showcase-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.showcase-card p {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.showcase-card img,
 .livraria-gallery img,
 .hero-image img,
 .florist-image img,
@@ -95,15 +102,7 @@ a:hover {
     border-radius: 8px;
 }
 
-.product-price {
-    display: block;
-    margin-top: 10px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--brand-color); 
-}
-
-/* Detalhes Institucionais e Formulários */
+/* Formulários e Contactos */
 .contact-info p {
     margin-top: 15px;
 }
