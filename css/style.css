@@ -112,33 +112,3 @@ a:hover {
     border-radius: 8px;
     border: 1px solid #E0DCD3;
 }
-/* ==========================================================================
-   Classes de Interatividade (Controladas pelo main.js)
-   ========================================================================== */
-
-/* Efeito do cabeçalho ao descer a página */
-.main-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--bg-color);
-    transition: box-shadow 0.3s ease, padding 0.3s ease;
-}
-
-.header-scrolled {
-    box-shadow: 0 4px 20px rgba(44, 37, 32, 0.08);
-    padding: 10px 0; /* Encolhe ligeiramente o cabeçalho para dar mais espaço de leitura */
-}
-
-/* Efeito de surgimento (Fade-in) */
-.fade-element {
-    opacity: 0;
-    transform: translateY(30px); /* Começa 30px mais abaixo */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* O JavaScript adiciona esta classe quando o utilizador faz scroll até ao elemento */
-.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
