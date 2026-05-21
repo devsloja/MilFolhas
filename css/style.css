@@ -6,12 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
 
 :root {
-    --bg-color: #FFFFFF; /* Fundo branco atualizado */      
+    /* Cores */
+    --bg-color: #FFFFFF;       
     --text-color: #2C2520;       
     --brand-color: #39B54A;       
     --support-color: #1E3525;       
     --accent-color: #D4A373;    
 
+    /* Tipografia */
     --font-heading: 'Rubik', sans-serif;
     --font-body: 'Lora', serif;
 }
@@ -23,12 +25,29 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Tipografia Base */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--support-color);
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.porto-section p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Links e Interações */
 a {
     color: var(--support-color);
     text-decoration: none;
@@ -39,6 +58,7 @@ a:hover {
     color: var(--brand-color);
 }
 
+/* Botões */
 .btn-primary {
     background-color: var(--brand-color);
     color: #ffffff;
@@ -54,6 +74,7 @@ a:hover {
     background-color: var(--support-color);
 }
 
+/* Estética dos Cartões de Produto */
 .product-card {
     border: 1px solid #E0DCD3; 
     border-radius: 8px;
@@ -66,10 +87,35 @@ a:hover {
     box-shadow: 0 10px 20px rgba(44, 37, 32, 0.1); 
 }
 
+.product-card img,
+.livraria-gallery img,
+.hero-image img,
+.florist-image img,
+.about-image img {
+    border-radius: 8px;
+}
+
 .product-price {
     display: block;
     margin-top: 10px;
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--brand-color); 
+}
+
+/* Detalhes Institucionais e Formulários */
+.contact-info p {
+    margin-top: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+}
+
+.map-container {
+    border-radius: 8px;
+    border: 1px solid #E0DCD3;
 }
