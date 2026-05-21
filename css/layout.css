@@ -26,6 +26,11 @@ body {
     padding: 20px 0;
 }
 
+.logo-img {
+    max-height: 85px; 
+    width: auto;
+}
+
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
@@ -36,44 +41,22 @@ body {
     grid-template-columns: 1fr 1fr; 
     gap: 40px; 
     margin-top: 50px;
-    align-items: center; /* Adicionado para centrar verticalmente o texto com a imagem */
+    align-items: center; 
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; 
-}
-/* ==========================================================================
-   Ajustes de Imagem e Novas Secções
-   ========================================================================== */
-
-/* Controla o tamanho do logótipo para não desfigurar o cabeçalho */
-.logo-img {
-    max-height: 85px; 
-    width: auto;
-}
-
-/* Espaçamento extra para a nova secção da florista não ficar colada à secção de cima */
-.florist-section {
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
-/* Grelha para 3 colunas (Ideal para montras de produtos) */
 .grid-3-cols {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
     margin-bottom: 80px;
 }
 
-/* Estrutura do Cartão de Produto */
 .product-card {
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Empurra o botão para o fundo */
+    justify-content: space-between; 
 }
 
 .product-card img {
@@ -83,5 +66,16 @@ img {
 
 .product-card .btn-primary {
     margin-top: 15px;
-    width: 100%; /* Faz o botão ocupar toda a largura do cartão */
+    width: 100%; 
+}
+
+.florist-section {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
 }
