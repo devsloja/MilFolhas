@@ -1,179 +1,43 @@
-/* ==========================================================================
-   FILE: css/layout.css
-   Purpose: Structure, Grids, Margins, and Positioning
-   ========================================================================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* --- Rodapé --- */
+.main-footer {
+    border-top: 1px solid #E0DCD3;
+    padding: 60px 0 30px 0;
+    margin-top: 100px;
 }
 
-body {
-    line-height: 1.6;
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 0 20px; 
+.footer-column h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.main-header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px 0;
-}
-
-.logo-img {
-    max-height: 85px; 
-    width: auto;
-}
-
-.main-nav ul {
-    display: flex; 
-    gap: 20px; 
+.footer-column ul {
     list-style: none;
 }
 
-.btn-primary {
-    display: inline-block;
-    padding: 12px 24px;
+.footer-column ul li {
+    margin-bottom: 10px;
 }
 
-.section-header {
-    margin-top: 50px;
-    margin-bottom: 40px;
+/* --- Divisores de Texto "Chiques" --- */
+.section-divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-color);
+    margin: 40px auto;
 }
 
-/* Grelhas */
-.grid-2-cols {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 40px; 
-    margin-top: 50px;
-    align-items: center; 
-}
-
-.grid-3-cols {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-    margin-bottom: 80px;
-}
-
-/* Secções */
-.florist-section,
-.porto-section {
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
-
-.porto-section .grid-2-cols img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.livraria-gallery {
-    margin-top: 20px;
-    margin-bottom: 80px;
-    align-items: stretch;
-}
-
-.livraria-gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Cartões de Exposição (Showcase) */
-.showcase-card {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.showcase-card img {
-    margin-bottom: 15px;
-    width: 100%;
-    height: auto;
-}
-
-/* Editorial Livre (Imagens adaptáveis sem forçar altura) */
-.editorial-image img {
-    width: 100%;
-    height: auto; 
-    border-radius: 8px;
-}
-
-/* Contactos */
-.contact-section {
-    margin-bottom: 80px;
-    align-items: start;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-}
-
-.map-section {
-    margin-bottom: 80px;
-}
-
-.map-container {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; 
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .main-header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .grid-2-cols, 
-    .grid-3-cols {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .florist-section,
-    .porto-section {
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
+/* --- Ajuste Geral --- */
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
